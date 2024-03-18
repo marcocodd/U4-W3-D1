@@ -1,4 +1,4 @@
-SELECT nome FROM Clienti WHERE nome = 'Mario'
+SELECT nome FROM "Clienti" WHERE nome = 'Mario'
 
 SELECT nome, cognome
 FROM "Clienti"
