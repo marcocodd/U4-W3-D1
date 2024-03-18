@@ -1,0 +1,12 @@
+SELECT nome FROM Clienti WHERE nome = 'Mario'
+
+SELECT nome, cognome
+FROM "Clienti"
+WHERE anno_di_nascita = 1982;
+
+
+SELECT COUNT (*) AS numero_fatture_iva20
+FROM "Fatture"
+WHERE "Iva" = 20;
+
+
