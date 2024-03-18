@@ -10,3 +10,12 @@ FROM "Fatture"
 WHERE "Iva" = 20;
 
 
+SELECT *
+FROM "Prodotti"
+WHERE EXTRACT(YEAR FROM "Data_attivazione") = 2017
+AND ("In_produzione" = TRUE OR "In_commercio" = TRUE);
+
+
+SELECT * FROM "Fatture"
+JOIN "Clienti" ON "Id_cliente" = numero_cliente
+WHERE "Importo" < 1000
